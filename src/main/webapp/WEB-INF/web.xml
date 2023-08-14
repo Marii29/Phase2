@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>FlyAwayPhase1</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>SelectionController</display-name>
+    <servlet-name>SelectionController</servlet-name>
+    <servlet-class>com.SelectionController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SelectionController</servlet-name>
+    <url-pattern>/SelectionController</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AvailableFlights</display-name>
+    <servlet-name>AvailableFlights</servlet-name>
+    <servlet-class>com.AvailableFlights</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AvailableFlights</servlet-name>
+    <url-pattern>/AvailableFlights</url-pattern>
+  </servlet-mapping>
+</web-app>
